@@ -2,6 +2,8 @@ package com.example.deliveryfood
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.CalendarContract.Colors
+import androidx.compose.ui.graphics.Color
 import androidx.navigation.findNavController
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
@@ -19,6 +21,7 @@ class MainActivity : AppCompatActivity() {
 
         val navigation = findNavController(R.id.nav_host_fragment)
         binding.bottomNavigationView.setupWithNavController(navigation)
+//        binding.bottomNavigationView.itemIconTintList =
     }
 
     override fun onSupportNavigateUp(): Boolean {
