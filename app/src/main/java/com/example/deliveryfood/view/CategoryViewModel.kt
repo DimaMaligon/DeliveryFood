@@ -52,9 +52,6 @@ class CategoryViewModel @Inject constructor(val repository: Repository) : ViewMo
                 it.tegs.contains(tagDish)
             }.toList()
             .toObservable()
-            .doOnNext {
-                Log.d("list11",  "$it")
-            }
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(getDishesListObserver())
 
