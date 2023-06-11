@@ -4,17 +4,26 @@
 
     <item
         android:id="@+id/mainFragment"
-        android:icon="@drawable/home1"
-        android:title="Home"
-        app:showAsAction="always"
-        />
+        android:icon="@drawable/home_icon"
+        android:title="Главная"
+        android:visible="true"
+        app:showAsAction="always" />
     <item
         android:id="@+id/searchFragment"
-        android:title="Search" />
+        android:icon="@drawable/search_icon"
+        android:title="Поиск"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/basketFragment"
-        android:title="Busket" />
+        android:icon="@drawable/busket_icon"
+        android:title="Корзина"
+        android:visible="true"
+        app:showAsAction="ifRoom" />
     <item
         android:id="@+id/accountFragment"
-        android:title="User" />
+        android:icon="@drawable/account_icon"
+        android:title="Аккаунт"
+        android:visible="true"
+        app:showAsAction="always" />
 </menu>
