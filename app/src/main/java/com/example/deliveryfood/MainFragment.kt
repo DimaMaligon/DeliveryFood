@@ -29,6 +29,7 @@ class MainFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        openFragment(ActionBarFullFragment.newInstance(), R.id.actionbar)
         cuisineModel.getCuisines()
         observeState()
     }
@@ -48,5 +49,11 @@ class MainFragment : Fragment() {
                 initRecyclerCuisine(it as ArrayList<CuisineItem>)
             }
         }
+    }
+
+    private fun openFragment(f: Fragment, idHolder: Int) {
+        parentFragmentManager.beginTransaction()
+            .replace(idHolder, f)
+            .commit()
     }
 }

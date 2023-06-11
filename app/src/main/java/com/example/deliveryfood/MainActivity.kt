@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
 
         val navigation = findNavController(R.id.nav_host_fragment)
         binding.bottomNavigationView.setupWithNavController(navigation)
-//        binding.bottomNavigationView.itemIconTintList =
     }
 
     override fun onSupportNavigateUp(): Boolean {
