@@ -4,4 +4,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="blue_icon_active">#3364E0</color>
     <color name="gray_icon_inactive">#A5A9B2</color>
+    <color name="gray">#F8F7F5</color>
 </resources>

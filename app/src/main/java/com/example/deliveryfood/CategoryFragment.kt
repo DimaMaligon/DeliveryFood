@@ -44,7 +44,7 @@ class CategoryFragment : Fragment() {
 
     private fun initRecyclerDish(listDishes: ArrayList<DishItem>) {
         binding.apply {
-            val gridManager = GridLayoutManager(activity, 4)
+            val gridManager = GridLayoutManager(activity, 3)
             recyclerDishes.layoutManager = gridManager
             recyclerDishes.adapter = adapterDish
             adapterDish.setDishList(listDishes)
