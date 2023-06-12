@@ -11,17 +11,16 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.deliveryfood.adapter.DishAdapter
 import com.example.deliveryfood.adapter.TagAdapter
-import com.example.deliveryfood.data.CuisineItem
 import com.example.deliveryfood.data.DishItem
 import com.example.deliveryfood.databinding.FragmentCategoryBinding
-import com.example.deliveryfood.view.CategoryViewModel
+import com.example.deliveryfood.view.DishViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class CategoryFragment : Fragment() {
     private lateinit var binding: FragmentCategoryBinding
-    private val categoryModel: CategoryViewModel by activityViewModels()
-    private val adapterDish = DishAdapter()
+    private val categoryModel: DishViewModel by activityViewModels()
+    private val adapterDish = DishAdapter(this)
     private lateinit var adapterTag: TagAdapter
 
     override fun onCreateView(

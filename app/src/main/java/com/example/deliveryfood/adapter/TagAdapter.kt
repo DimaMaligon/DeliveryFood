@@ -2,18 +2,13 @@ package com.example.deliveryfood.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModel
-import androidx.lifecycle.viewmodel.compose.viewModel
-import androidx.navigation.fragment.NavHostFragment
 import androidx.recyclerview.widget.RecyclerView
-import com.example.deliveryfood.R
 import com.example.deliveryfood.data.Categories
 import com.example.deliveryfood.databinding.TagItemLayoutBinding
-import com.example.deliveryfood.view.CategoryViewModel
+import com.example.deliveryfood.view.DishViewModel
 
 
-class TagAdapter(val viewModel: CategoryViewModel) : RecyclerView.Adapter<TagAdapter.TagHolder>() {
+class TagAdapter(val viewModel: DishViewModel) : RecyclerView.Adapter<TagAdapter.TagHolder>() {
     private var listTag = Categories.categories
 
     inner class TagHolder(val binding: TagItemLayoutBinding) :

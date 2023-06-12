@@ -1,7 +1,6 @@
 package com.example.deliveryfood.view
 
 import android.annotation.SuppressLint
-import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.example.deliveryfood.data.DishItem
 import com.example.deliveryfood.repository.Repository
@@ -16,13 +15,19 @@ import kotlinx.coroutines.flow.StateFlow
 import javax.inject.Inject
 
 @HiltViewModel
-class CategoryViewModel @Inject constructor(val repository: Repository) : ViewModel() {
+class DishViewModel @Inject constructor(val repository: Repository) : ViewModel() {
+    lateinit var disposable: Disposable
     private val listDishesMutable: MutableStateFlow<MutableList<DishItem>> =
         MutableStateFlow(mutableListOf())
     var listDishes: StateFlow<List<DishItem>> = listDishesMutable
-    lateinit var disposable: Disposable
+    private val dishChosenMutable = MutableStateFlow(DishItem("", 0, "", "", 0, listOf(), 0))
+    val dishChosen: StateFlow<DishItem> = dishChosenMutable
+
     fun setListDishes(list: List<DishItem>) {
         listDishesMutable.value = list as MutableList<DishItem>
+    }
+    fun setChosenDish(dish: DishItem) {
+        dishChosenMutable.value = dish
     }
 
     @SuppressLint("CheckResult")
