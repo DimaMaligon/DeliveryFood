@@ -1,8 +1,7 @@
 package com.example.deliveryfood.data
 
-
-import com.google.gson.annotations.SerializedName
 import com.google.gson.annotations.Expose
+import com.google.gson.annotations.SerializedName
 
 data class DishItem(
     @SerializedName("description")
