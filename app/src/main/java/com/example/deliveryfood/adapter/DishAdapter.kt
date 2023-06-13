@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.RecyclerView
-import com.example.deliveryfood.PopUpOrderFragment
+import com.example.deliveryfood.fragment_popup.PopUpOrderFragment
 import com.example.deliveryfood.data.DishItem
 import com.example.deliveryfood.databinding.ItemDishLayoutBinding
 import com.example.deliveryfood.view.DishViewModel

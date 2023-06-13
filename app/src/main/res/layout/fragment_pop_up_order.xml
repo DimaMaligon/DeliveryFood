@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:clipToOutline="true"
-    tools:context=".PopUpOrderFragment">
+    android:clipToOutline="false"
+    tools:context=".fragment_popup.PopUpOrderFragment">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_top"
@@ -43,19 +43,20 @@
 
     <ImageView
         android:id="@+id/image_popup_dish"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toStartOf="@+id/guideline_right"
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
         app:layout_constraintTop_toTopOf="@+id/guideline_top"
-        app:srcCompat="@drawable/dish_popup" />
+        app:srcCompat="@drawable/dish_popup"
+        android:contentDescription="@string/image_dish_popup" />
 
     <TextView
         android:id="@+id/title_popup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Рыба с овощами"
+        android:text="@string/title_order"
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
         app:layout_constraintTop_toBottomOf="@+id/image_popup_dish" />
 
@@ -64,7 +65,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="500р"
+        android:text="@string/price_order"
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
         app:layout_constraintTop_toBottomOf="@+id/title_popup" />
 
@@ -74,28 +75,31 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="TextView"
+        android:text="@string/weight_order"
         app:layout_constraintStart_toEndOf="@+id/price_popup"
         app:layout_constraintTop_toBottomOf="@+id/title_popup" />
 
     <TextView
         android:id="@+id/description_popup"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="Салат по восточному - это здоровое и вкусное блюдо, которое мы готовим в нашем ресторане"
+        android:layout_width="372dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/description_dish"
         app:layout_constraintEnd_toStartOf="@+id/guideline_right"
         app:layout_constraintStart_toStartOf="@+id/guideline_left"
         app:layout_constraintTop_toBottomOf="@+id/price_popup" />
 
     <Button
         android:id="@+id/add_busket_popup"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:backgroundTint="@color/dark_blue"
-        android:text="Добавить в корзину"
+        android:text="@string/button_add"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline_right"

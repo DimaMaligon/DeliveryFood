@@ -1,5 +1,16 @@
 <resources>
     <string name="app_name">DeliveryFood</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tag">Тэг</string>
+    <string name="title_order">Рыба и рис и овощи</string>
+    <string name="price_order">500 р</string>
+    <string name="weight_order">300 г</string>
+    <string name="title_cuisine">Пекарни и кондитерские</string>
+    <string name="search">search</string>
+    <string name="description_dish">Салат по восточному - это здоровое и вкусное блюдо, которое мы готовим в нашем ресторане</string>
+    <string name="image_dish_popup">image_dish_popup</string>
+    <string name="button_add">Добавить в корзину</string>
+    <string name="button_pay">Оплатить</string>
+    <string name="icon_user">icon_user</string>
+    <string name="asia_cuisine">Азиатская кухня</string>
+    <string name="account">account</string>
 </resources>

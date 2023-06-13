@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="44dp"
-    tools:context=".ActionBarFullFragment">
+    tools:context=".fragment_actionbar.ActionBarFullFragment">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_category"
@@ -33,7 +33,8 @@
                 app:layout_constraintEnd_toStartOf="@+id/guideline_left_views"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/icon_location" />
+                app:srcCompat="@drawable/icon_location"
+                android:contentDescription="@string/icon_user" />
 
             <androidx.constraintlayout.widget.Guideline
                 android:id="@+id/guideline_left_views"

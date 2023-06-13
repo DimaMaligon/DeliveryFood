@@ -1,4 +1,4 @@
-package com.example.deliveryfood
+package com.example.deliveryfood.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,9 +7,11 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.deliveryfood.R
 import com.example.deliveryfood.adapter.OrderAdapter
 import com.example.deliveryfood.data.OrderItem
 import com.example.deliveryfood.databinding.FragmentBasketBinding
+import com.example.deliveryfood.fragment_actionbar.ActionBarFullFragment
 import com.example.deliveryfood.view.OrderViewModel
 
 class BasketFragment : Fragment() {
@@ -30,10 +32,6 @@ class BasketFragment : Fragment() {
         openFragment(ActionBarFullFragment.newInstance(), R.id.actionbar_basket)
         val listOrders = orderModel.setOrderedDishes.value.toList()
         initRecyclerOrders(listOrders)
-    }
-
-    companion object {
-        fun newInstance() = BasketFragment()
     }
 
     private fun initRecyclerOrders(list: List<OrderItem>) {

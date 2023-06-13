@@ -1,19 +1,12 @@
-package com.example.deliveryfood
+package com.example.deliveryfood.fragment_actionbar
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.activity.OnBackPressedCallback
-import androidx.navigation.Navigation
-import androidx.navigation.Navigation.findNavController
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupWithNavController
 import com.example.deliveryfood.databinding.FragmentActionBarCategoryBinding
-import com.example.deliveryfood.databinding.FragmentMainBinding
-
 
 class ActionBarCategoryFragment : Fragment() {
     private lateinit var binding: FragmentActionBarCategoryBinding
@@ -32,6 +25,7 @@ class ActionBarCategoryFragment : Fragment() {
             findNavController().popBackStack()
         }
     }
+
     companion object {
         fun newInstance() = ActionBarCategoryFragment()
     }

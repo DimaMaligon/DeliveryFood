@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="44dp"
-    tools:context=".ActionBarCategoryFragment">
+    tools:context=".fragment_actionbar.ActionBarCategoryFragment">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_category"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white">
-
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -21,7 +20,7 @@
                 android:id="@+id/catagory_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Азиатская кухня"
+                android:text="@string/asia_cuisine"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/image_user_right"
@@ -47,8 +46,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.appcompat.widget.Toolbar>
-
 </FrameLayout>
