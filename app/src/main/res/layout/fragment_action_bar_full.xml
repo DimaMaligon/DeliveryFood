@@ -7,7 +7,7 @@
     tools:context=".ActionBarFullFragment">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar_full"
+        android:id="@+id/toolbar_category"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white">
@@ -43,7 +43,7 @@
                 app:layout_constraintGuide_end="355dp" />
 
             <TextView
-                android:id="@+id/city_name"
+                android:id="@+id/catagory_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="2dp"
@@ -61,11 +61,11 @@
                 android:text="12 Августа, 2023"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/guideline_left_views"
-                app:layout_constraintTop_toBottomOf="@+id/city_name"
+                app:layout_constraintTop_toBottomOf="@+id/catagory_name"
                 app:layout_constraintVertical_bias="0.285" />
 
             <ImageView
-                android:id="@+id/image_user"
+                android:id="@+id/image_user_right"
                 android:layout_width="44dp"
                 android:layout_height="44dp"
                 android:layout_marginEnd="16dp"

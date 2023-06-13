@@ -8,7 +8,7 @@ import androidx.navigation.fragment.NavHostFragment.Companion.findNavController
 import androidx.recyclerview.widget.RecyclerView
 import com.example.deliveryfood.R
 import com.example.deliveryfood.data.CuisineItem
-import com.example.deliveryfood.databinding.CuisineItemLayoutBinding
+import com.example.deliveryfood.databinding.ItemCuisineLayoutBinding
 import com.squareup.picasso.Picasso
 
 
@@ -16,13 +16,13 @@ class CuisineAdapter constructor(private val fragment: Fragment) :
     RecyclerView.Adapter<CuisineAdapter.CuisineHolder>() {
     private var listCuisines = mutableListOf<CuisineItem>()
 
-    inner class CuisineHolder(val binding: CuisineItemLayoutBinding) :
+    inner class CuisineHolder(val binding: ItemCuisineLayoutBinding) :
         RecyclerView.ViewHolder(binding.root) {
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CuisineHolder {
         val binding =
-            CuisineItemLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+            ItemCuisineLayoutBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return CuisineHolder(binding)
     }
 
