@@ -1,4 +1,4 @@
-# Приложение по заказу еды:
+# Приложение для заказа еды:
 Приложение с помощью которого ты можешь заказать свои любимые блюда.
 
 <p  align="center">
@@ -23,7 +23,6 @@
 Toolbar, BottomNavigationMenu, список категорий.
 Для перехода к списку блюд тапаем на любое изображение категории.
 
-
 <p align="center">
   <code> <img width="30%" title="Vi" src="readme_images/gif/device-open_category.gif"></code>
 </p>
@@ -45,7 +44,6 @@ Toolbar, BottomNavigationMenu, список категорий.
 Для работы с корзиной тапаем в BottomNavigationMenu на item ```Корзина```. Тут мы можем менять 
 количество блюд. А если нажать минус, когда количество определенного блюда равно 1, то оно исчезнет
 из списка. Также тут есть кнопка для оформеления заказа.
-
 
 <p align="center">
   <code> <img width="30%" title="Video" src="readme_images/gif/device-delete_dish.gif"> </code>
