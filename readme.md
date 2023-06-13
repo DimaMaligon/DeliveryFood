@@ -24,7 +24,7 @@ Toolbar, BottomNavigationMenu, список категорий.
 </p>
 
 <p align="center">
-  <img title="Video" src="readme_images/images/device-open_category.gif">
+  <img title="Vi" src="readme_images/gif/device-open_category.gif">
 </p>
 
 На экране Списка блюд, есть: теги, список еды, верхний Toolbar(содержит уже название группы блюд и 
@@ -38,7 +38,7 @@ Toolbar, BottomNavigationMenu, список категорий.
 Если мы хотим добавить блюдо, то тапаем по кнопке ```Добавить в корзину```.
 
 <p align="center">
-  <img title="Video" src="readme_images/images/device-open-dish.gif">
+  <img title="Vide" src="readme_images/gif/device-open-dish.gif">
 </p>
 
 Для работы с корзиной тапаем в BottomNavigationMenu на item ```Корзина```. Тут мы можем менять 
@@ -50,7 +50,7 @@ Toolbar, BottomNavigationMenu, список категорий.
 </p>
 
 <p align="center">
-  <code> <img width="30%" title="Video" src="readme_images/images/device-delete_dish.gif"> </code>
+  <code> <img width="30%" title="Video" src="readme_images/gif/device-delete_dish.gif"> </code>
 </p>
 
 ## Описание проекта
