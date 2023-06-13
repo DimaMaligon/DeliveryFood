@@ -1,4 +1,4 @@
-package com.example.deliveryfood
+package com.example.deliveryfood.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,9 +8,11 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.deliveryfood.R
 import com.example.deliveryfood.adapter.CuisineAdapter
 import com.example.deliveryfood.data.CuisineItem
 import com.example.deliveryfood.databinding.FragmentMainBinding
+import com.example.deliveryfood.fragment_actionbar.ActionBarFullFragment
 import com.example.deliveryfood.view.CuisineViewModel
 import dagger.hilt.android.AndroidEntryPoint
 

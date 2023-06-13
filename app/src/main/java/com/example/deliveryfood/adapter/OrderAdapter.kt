@@ -1,17 +1,10 @@
 package com.example.deliveryfood.adapter
 
-import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.activityViewModels
 import androidx.recyclerview.widget.RecyclerView
-import com.example.deliveryfood.PopUpOrderFragment
-import com.example.deliveryfood.data.DishItem
 import com.example.deliveryfood.data.OrderItem
-import com.example.deliveryfood.databinding.ItemDishLayoutBinding
 import com.example.deliveryfood.databinding.ItemOrderLayoutBinding
-import com.example.deliveryfood.view.DishViewModel
 import com.squareup.picasso.Picasso
 
 
@@ -35,8 +28,25 @@ class OrderAdapter : RecyclerView.Adapter<OrderAdapter.OrderHolder>() {
                 titleOrder.text = order.dishItem.name
                 priceOrder.text = order.dishItem.price.toString()
                 weghtOrder.text = order.dishItem.weight.toString()
-                    Picasso.get().load(order.dishItem.imageUrl)
-                        .into(imageOrder).toString()
+                Picasso.get().load(order.dishItem.imageUrl)
+                    .into(imageOrder).toString()
+
+                var couter = order.count
+                buttonPlus.setOnClickListener {
+                    couter++
+                    counterDishes.text = couter.toString()
+                }
+
+                buttonMinus.setOnClickListener {
+                    couter--
+                    counterDishes.text = couter.toString()
+                    if (couter == 0) {
+                        val actualPosition = holder.bindingAdapterPosition
+                        listOrder.removeAt(actualPosition)
+                        notifyItemRemoved(actualPosition)
+                        notifyItemRangeChanged(actualPosition, listOrder.size)
+                    }
+                }
             }
         }
     }

@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-
     <fragment
         android:id="@+id/nav_host_fragment"
         android:name="androidx.navigation.fragment.NavHostFragment"
@@ -24,21 +23,10 @@
         android:layout_width="413dp"
         android:layout_height="68.6dp"
         android:layout_gravity="bottom"
-        android:animateLayoutChanges="false"
         android:background="@color/white"
-        android:clickable="false"
-        android:clipChildren="false"
-        android:defaultFocusHighlightEnabled="false"
-        android:descendantFocusability="afterDescendants"
-        android:drawingCacheQuality="low"
-        android:keepScreenOn="false"
-        android:keyboardNavigationCluster="false"
-        android:persistentDrawingCache="scrolling"
         android:pointerIcon="context_menu"
-        android:visibility="visible"
         app:compatShadowEnabled="false"
         app:itemActiveIndicatorStyle="@null"
-        app:itemHorizontalTranslationEnabled="true"
         app:itemIconSize="28dp"
         app:itemIconTint="@drawable/bottom_navigation_selector"
         app:itemPaddingBottom="16.6dp"
@@ -50,5 +38,4 @@
         app:menu="@menu/bottom_menu">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,7 +6,6 @@
     android:layout_height="wrap_content"
     android:backgroundTint="@color/gray">
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
@@ -25,7 +24,7 @@
             android:id="@+id/title_dish"
             android:layout_width="109dp"
             android:layout_height="wrap_content"
-            android:text="Рыба и рис и овощи"
+            android:text="@string/title_order"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

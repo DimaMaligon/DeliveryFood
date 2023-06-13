@@ -23,7 +23,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="Рыба и рис и овощи"
+            android:text="@string/title_order"
             app:layout_constraintBottom_toTopOf="@+id/guideline_text_dish"
             app:layout_constraintStart_toEndOf="@+id/image_order" />
 
@@ -39,7 +39,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="500 р"
+            android:text="@string/price_order"
             app:layout_constraintStart_toEndOf="@+id/image_order"
             app:layout_constraintTop_toBottomOf="@id/guideline_text_dish" />
 
@@ -48,7 +48,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:text="300 г"
+            android:text="@string/weight_order"
             app:layout_constraintStart_toEndOf="@+id/price_order"
             app:layout_constraintTop_toTopOf="@+id/guideline_text_dish" />
 
@@ -83,7 +83,7 @@
                 app:layout_constraintGuide_begin="32dp" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/button_minus"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="40dp"
                 android:layout_height="0dp"
@@ -96,7 +96,7 @@
                 app:layout_constraintTop_toTopOf="@+id/guideline_top_button" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/counter_dishes"
                 android:layout_width="19dp"
                 android:layout_height="0dp"
                 android:background="@color/gray"
@@ -105,11 +105,11 @@
                 android:text="1"
                 android:textSize="14sp"
                 app:layout_constraintBottom_toTopOf="@+id/guideline_bottom_button"
-                app:layout_constraintStart_toEndOf="@+id/button"
+                app:layout_constraintStart_toEndOf="@+id/button_minus"
                 app:layout_constraintTop_toTopOf="@+id/guideline_top_button" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/button_plus"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="40dp"
                 android:layout_height="0dp"
@@ -120,7 +120,7 @@
                 app:iconPadding="0dp"
                 app:iconTint="@color/black"
                 app:layout_constraintBottom_toTopOf="@+id/guideline_bottom_button"
-                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintStart_toEndOf="@+id/counter_dishes"
                 app:layout_constraintTop_toTopOf="@+id/guideline_top_button" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

@@ -22,9 +22,4 @@ class MainActivity : AppCompatActivity() {
         val navigation = findNavController(R.id.nav_host_fragment)
         binding.bottomNavigationView.setupWithNavController(navigation)
     }
-
-    override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment)
-        return navController.navigateUp() || super.onSupportNavigateUp()
-    }
 }
