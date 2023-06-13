@@ -1,6 +1,10 @@
 # Приложение по заказу еды:
 Приложение с помощью которого ты можешь заказать свои любимые блюда.
 
+<p  align="center">
+<code><img width="30%" title="main" src="readme_images/images/category_main.png"></code>
+</p>
+
 ## Стек используемых технологий
 
 <p  align="left">
@@ -19,12 +23,9 @@
 Toolbar, BottomNavigationMenu, список категорий.
 Для перехода к списку блюд тапаем на любое изображение категории.
 
-<p  align="center">
-<code><img width="30%" title="main" src="readme_images/images/category_main.png"></code>
-</p>
 
 <p align="center">
-  <img title="Vi" src="readme_images/gif/device-open_category.gif">
+  <code> <img width="30%" title="Vi" src="readme_images/gif/device-open_category.gif"></code>
 </p>
 
 На экране Списка блюд, есть: теги, список еды, верхний Toolbar(содержит уже название группы блюд и 
@@ -38,16 +39,13 @@ Toolbar, BottomNavigationMenu, список категорий.
 Если мы хотим добавить блюдо, то тапаем по кнопке ```Добавить в корзину```.
 
 <p align="center">
-  <img title="Vide" src="readme_images/gif/device-open-dish.gif">
+  <code> <img width="30%" title="Vide" src="readme_images/gif/device-open-dish.gif"></code>
 </p>
 
 Для работы с корзиной тапаем в BottomNavigationMenu на item ```Корзина```. Тут мы можем менять 
 количество блюд. А если нажать минус, когда количество определенного блюда равно 1, то оно исчезнет
 из списка. Также тут есть кнопка для оформеления заказа.
 
-<p  align="center">
-<code><img width="30%" title="dishes" src="readme_images/images/busket_dish.png"></code>
-</p>
 
 <p align="center">
   <code> <img width="30%" title="Video" src="readme_images/gif/device-delete_dish.gif"> </code>
