@@ -1,10 +1,10 @@
 package com.example.deliveryfood
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
@@ -34,6 +34,7 @@ class CategoryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         categoryModel.apply {
+            openFragment(ActionBarCategoryFragment.newInstance(), R.id.toolbar)
             initRecyclerTag()
             getDishes()
             observeState()
@@ -65,5 +66,11 @@ class CategoryFragment : Fragment() {
                 initRecyclerDish(it as ArrayList<DishItem>)
             }
         }
+    }
+
+    private fun openFragment(f: Fragment, idHolder: Int) {
+        parentFragmentManager.beginTransaction()
+            .replace(idHolder, f)
+            .commit()
     }
 }

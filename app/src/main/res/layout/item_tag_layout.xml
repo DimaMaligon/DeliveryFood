@@ -7,16 +7,17 @@
 
     <Button
         android:id="@+id/tag_button"
+        style="@style/Widget.App.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#656060"
-        android:backgroundTint="#6C6868"
+        android:layout_marginEnd="8dp"
         android:text="tag"
-        android:textColor="#000000"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
