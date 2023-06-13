@@ -1,11 +1,9 @@
 package com.example.deliveryfood.view
 
 import android.annotation.SuppressLint
-import android.util.Log
 import androidx.lifecycle.ViewModel
-import com.example.deliveryfood.adapter.CuisineAdapter
-import com.example.deliveryfood.repository.Repository
 import com.example.deliveryfood.data.CuisineItem
+import com.example.deliveryfood.repository.Repository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.core.Observer
@@ -16,9 +14,7 @@ import kotlinx.coroutines.flow.StateFlow
 import javax.inject.Inject
 
 @HiltViewModel
-class CuisineViewModel @Inject constructor(val repository: Repository): ViewModel() {
-    private val englishTranscriptionMutable = MutableStateFlow("")
-    val englishTranscription: StateFlow<String> = englishTranscriptionMutable
+class CuisineViewModel @Inject constructor(val repository: Repository) : ViewModel() {
     private val listCuisinesMutable: MutableStateFlow<MutableList<CuisineItem>> =
         MutableStateFlow(mutableListOf())
     var listCuisines: StateFlow<List<CuisineItem>> = listCuisinesMutable

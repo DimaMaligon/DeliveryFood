@@ -31,7 +31,7 @@ class DishAdapter constructor(private val fragment: Fragment) : RecyclerView.Ada
         with(holder) {
             val dish = listDish[position]
             binding.apply {
-                textDish.text = dish.name
+                titleDish.text = dish.name
                 Picasso.get().load(dish.imageUrl)
                     .into(imageDish)
                 imageDish.setOnClickListener {

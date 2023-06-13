@@ -22,7 +22,7 @@
             tools:srcCompat="@drawable/dish_image" />
 
         <TextView
-            android:id="@+id/text_dish"
+            android:id="@+id/title_dish"
             android:layout_width="109dp"
             android:layout_height="wrap_content"
             android:text="Рыба и рис и овощи"

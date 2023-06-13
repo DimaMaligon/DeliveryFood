@@ -1,6 +1,5 @@
 package com.example.deliveryfood.view
 
-import android.annotation.SuppressLint
 import androidx.lifecycle.ViewModel
 import com.example.deliveryfood.data.DishItem
 import com.example.deliveryfood.repository.Repository
@@ -23,14 +22,10 @@ class DishViewModel @Inject constructor(val repository: Repository) : ViewModel(
     private val dishChosenMutable = MutableStateFlow(DishItem("", 0, "", "", 0, listOf(), 0))
     val dishChosen: StateFlow<DishItem> = dishChosenMutable
 
-    fun setListDishes(list: List<DishItem>) {
-        listDishesMutable.value = list as MutableList<DishItem>
-    }
     fun setChosenDish(dish: DishItem) {
         dishChosenMutable.value = dish
     }
 
-    @SuppressLint("CheckResult")
     fun getDishes() {
         val responseDishes = repository.getDishes()
 
@@ -59,8 +54,6 @@ class DishViewModel @Inject constructor(val repository: Repository) : ViewModel(
             .toObservable()
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe(getDishesListObserver())
-
-
     }
 
     private fun getDishesListObserver(): Observer<List<DishItem>> {

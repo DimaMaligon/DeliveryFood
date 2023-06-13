@@ -39,7 +39,6 @@ class CategoryFragment : Fragment() {
             getDishes()
             observeState()
         }
-
     }
 
     private fun initRecyclerDish(listDishes: ArrayList<DishItem>) {
